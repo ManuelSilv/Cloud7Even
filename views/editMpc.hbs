@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='stylesheets/mpc.css'/>
+    <!-- Bootstrap 4 -->
+  {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> --}}
+ 
+  {{!-- <script type="text/javascript" src="/compressor.js"></script> --}}
+  <title>Document</title>
+</head>
+<body>
+  
+{{!-- <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div style="margin: 200px auto 0; width: 300px;">
+
+          <h5>Upload Audio File</h5>
+          <fieldset>
+            <input type="file" id="audio-file" accept="audio/mpeg, audio/ogg, audio/*" />
+            <button type="button" id="compress_btn" class="btn btn-outline-primary" style="margin-top: 20px;">Compress</button>
+          </fieldset>
+
+          </div>
+        <div>
+      </div>
+    </div>
+  </div> --}}
+
+  <div class="mpc">
+   <button type="button" onclick="SoundOne()"></button>
+   <button type="button" onclick="SoundTwo()"></button>
+   <button type="button" onclick="SoundThree()"></button>
+   <button type="button" onclick="SoundFour()"></button>
+   <button type="button" onclick="SoundFive()"></button>
+   <button type="button" onclick="SoundSix()"></button>
+   <button type="button" onclick="SoundSeven()"></button>
+   <button type="button" onclick="SoundEight()"></button>
+   <button type="button" onclick="SoundNine()"></button>
+   <button type="button" onclick="SoundTen()"></button>
+   <button type="button" onclick="SoundEleven()"></button>
+   <button type="button" onclick="SoundTwelve()"></button>
+   <button type="button" onclick="SoundThirteen()"></button>
+   <button type="button" onclick="SoundFourteen()"></button>
+   <button type="button" onclick="SoundFifteen()"></button>
+   <button type="button" onclick="SoundSixteen()"></button>
+  </div>
+</div>
+
+<each sound>
+  <audio id="{{sounds.id}}" controls>
+    <source src="{{sounds.location}}">
+  </audio>
+</each>
+
+{{!-- <input id="upload" type="file" visibility="hidden"> --}}
+
+{{!-- <button type="button" id="compress_btn" class="btn btn-outline-primary" style="margin-top: 20px;">Compress</button> --}} --}}
+<input type="file" id="PadOne" />
+{{!-- <button type="button" id="compress_btn" class="btn btn-outline-primary" style="margin-top: 20px;">Compress</button> --}}
+<audio id="PadOne" controls >
+</audio>
+<audio id="PadTwo" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadThree" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadFour" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadFive" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadSix" controls  ><source src="" type="audio/wav"/></audio>
+<audio id="PadSeven" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadEight" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadTen" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadEleven" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadTwelve" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadThirtheen" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadForteen" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadThirteen" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadFifteen" controls ><source src="" type="audio/wav"/></audio>
+<audio id="PadSixteen" controls ><source src="" type="audio/wav"/></audio>
+
+
+
+{{!-- <script>
+function handleFiles(event) {
+	var files = event.target.files;
+	$("#PadOne").attr("src", URL.createObjectURL(files[0]));
+	document.getElementById("PadOne").load();
+}
+
+document.getElementById("PadOne").addEventListener("change", handleFiles, false);
+
+</script> --}}
+ <script src="/mpc.js"></script>
+</body>
+<!--<script>
+
+  //array link audio file, loop 
+  
+  window.onload = function() {
+    let pads = document.querySelectorAll(".mpc button");
+    let upload = document.getElementById("upload");
+
+
+    for(let i = 0; i < pads.length; i++) {
+      pads[i].onclick = function() {
+
+        upload.click();
+      }
+    }
+  }
+
+var fileTypes = [
+  'audio/mp3',
+  'audio/wav',
+]
+
+function validFileType(file) {
+  for(var i = 0; i < fileTypes.length; i++) {
+    if(file.type === fileTypes[i]) {
+      return true;
+    }
+  }
+
+  return false;
+}
+</script>
+-->
+

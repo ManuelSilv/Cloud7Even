@@ -1,0 +1,131 @@
+/* @import url("https://fonts.googleapis.com/css?family=Righteous"); */
+
+body {
+  width: 150px;
+  height: 100%;
+background-repeat: no-repeat;
+ background-position: 20% 0%; 
+ background-color: black;
+background-attachment: scroll;
+
+}
+.nav-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  background: #252525;
+  border-bottom: 1px solid #000;
+  /* border-bottom: 2px solid rgba(2, 216, 2, 0.637); */
+  margin-top: -10px;
+  
+}
+.container{
+display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.editor{
+  float: left;
+  margin: 5px auto;
+  background: black; opacity:1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.mpc {
+  float: middle;
+  position:fixed;
+  top: 10%; 
+  right: 1%;
+  max-width: 280px;
+  max-height: 260px;
+  margin: 5px auto;
+  background:#0000001a; opacity:1;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 30px 2px rgb(255, 255, 255);
+  
+}
+h1 {
+  font-family: Century Gothic, sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.0em;
+  color: white;
+  width: 100%;
+  margin-bottom: 0.3em;
+  text-shadow: -1px -1px 3px black;
+  position: relative;
+  top: -4px;
+  left: -4px;
+}
+h2 {
+  font-family: Century Gothic, sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.0em;
+  color: white;
+  width: 100%;
+  margin-bottom: 0.3em;
+  text-shadow: -1px -1px 3px black;
+  position: relative;
+  top: -4px;
+  left: -4px;
+}
+button {
+  float: middle;
+  /* width: 79px;
+  height: 79px; */
+  width: 59px;
+  height:59px;
+  margin: 4px;
+  background: #333;
+  display: inline-block;
+  /* margin: 7.5px 5px; */
+  box-shadow: 0 4px 0 #1e1e1e, 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  border: 1px solid #1e1e1e;
+  border-radius: 3px;
+}
+button:hover, button:active, button:focus {
+  /* background: rgba(0, 255, 64, 0.555); */
+  cursor: pointer;
+  background-color: #333;
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  top: 2px;
+}
+
+.mpc button :active {
+  background-color: #333;
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  top: 2px;
+}
+.mpc button.active {
+  background-color: #333;
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  top: 2px;
+}
+
+ul.grill {
+  list-style: none;
+  margin: 0;
+}
+ul.grill.one {
+  position: absolute;
+  right: 2px;
+}
+ul.grill.two {
+  position: absolute;
+  right: 65px;
+}
+ul.grill li {
+  width: 60px;
+  height: 5px;
+  background: #232323;
+  margin-top: 3px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+audio {
+  visibility: hidden;
+}

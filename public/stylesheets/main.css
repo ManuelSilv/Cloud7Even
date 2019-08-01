@@ -1,0 +1,30 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+}
+/*--- navigation bar ---*/
+.navbar {
+  background:#cfcfcfc9;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: rgb(62, 238, 106);
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    display: inline-block;
+    float: right;
+  }
+}

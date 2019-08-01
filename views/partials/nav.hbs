@@ -1,0 +1,16 @@
+
+<div class="nav-container">
+<ul>
+    <li><a href="/">Home |</a></li> 
+    {{#if user }}
+        <li><a href="/project">Projects</a></li>
+        <li><a href="/views/editMpc">Create Project</a></li>
+        <li><a href="/views/profile">Profile</a></li>
+        <li><a href="/views/logout">Logout</a></li>
+        <li>Welcome {{user.username}}</li>
+    {{else}}
+        <li><a href="auth/signup">Sign up |</a></li>
+        <li><a href="auth/login">Login |</a></li>
+    {{/if}}
+</ul>
+</div>
